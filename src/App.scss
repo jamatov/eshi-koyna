@@ -1,0 +1,228 @@
+/* The following line can be included in a src/App.scss */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+
+$text-color : #062A4D;
+$bg-color : #F2F0F0;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+li{
+  list-style-type: none !important;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.container{
+  max-width: 1240px;
+}
+
+ul{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.button{
+  cursor: pointer;
+  display: inline-flex;
+  border-radius: 15px;
+  background: $text-color;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  gap: 10px;
+  align-items: center;
+}
+
+.Navbar{
+  .nav-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+      height: 54px;
+    }
+
+    ul{
+      display: flex;
+
+      li{
+        padding: 25px 10px;
+
+        a{
+          color: $text-color;
+          font-size: 17px;
+          font-weight: 700;
+          text-transform: uppercase;
+
+        }
+      }
+
+      
+    }
+  }
+
+}
+
+.Header{
+  background-color: $bg-color;
+  .header-body{
+    padding-top: 450px;
+    background-image: url('./images/header-bg.jpeg');
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .text-center{
+      .button{
+        cursor: pointer;
+        display: inline-flex;
+        border-radius: 15px;
+        background: $text-color;
+        color: #fff;
+        padding: 15px 30px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.OurProducts{
+  padding: 50px 0 30px 0;
+
+
+  .product-tittle{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  .product-card{
+    img{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .card-footer{
+      padding: 10px 10px;
+      display: flex;
+      align-items: center;
+      background: $bg-color;
+      h2{
+        width: 100%;
+        margin: 0;
+        font-size: 28px;
+        font-weight: 600;
+        color: $text-color;
+        text-align: center;
+
+      }
+    }
+  }
+}
+
+.About{
+  padding: 20px 0 30px;
+  background: $bg-color;
+
+  h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: $text-color;
+  }
+
+  p{
+    font-size: 17px;
+    font-weight: 600;
+    color: $text-color;
+
+  }
+
+  .d-flex{
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.WhyWe{
+  padding: 30px 0;
+  img{
+    width: 80px;
+    margin-bottom: 20px;
+  }
+
+  h2{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    line-height: 1;
+    color: $text-color;
+  }
+
+  h3{
+    font-style: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: $text-color;
+  }
+
+  p{
+    color: $text-color;
+    font-style: 17px;
+  }
+}
+
+.Info1{
+  padding: 50px 0;
+  background: $bg-color;
+  margin-bottom: 30px;
+
+  .info1-texts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p{
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+  }
+
+  img{
+    width: 100%;
+    border-radius: 30px;
+  }
+}
+
+.Socials{
+  padding: 50px 0;
+  img{
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  p{
+    padding: 0 15px;
+  }
+}
+
+.Footer{
+  
+}
