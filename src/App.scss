@@ -224,5 +224,24 @@ ul{
 }
 
 .Footer{
-  
+  background: $bg-color;
+  .footer-blog{
+    padding: 30px 0;
+  }
+
+  .number-link{
+    font-size: 17px;
+    color: $text-color;
+
+  }
+
+  img{
+    width: 145px;
+  }
+
+  .service-link{
+    text-decoration: underline !important;
+    color: #215387;
+    font-size: 12px;
+  }
 }

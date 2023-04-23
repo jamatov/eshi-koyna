@@ -7,7 +7,7 @@ import Img4 from '../images/product-card4.jpeg'
 
 export default function OurProducts() {
   return (
-    <div className='OurProducts'>
+    <div className='OurProducts' id='Maxsulotlar'> 
       <div className="container-fluid">
         <div className="row">
           <div className="col12 text-center">

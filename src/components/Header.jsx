@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div className='Header'>
+    <div className='Header' id='Header'>
       <div className="container">
         <div className="header-body">
           <div className="text-center">

@@ -6,7 +6,7 @@ import icon3 from '../images/social3.svg'
 
 export default function Socials() {
   return (
-    <div className='Socials'>
+    <div className='Socials' id='Contact'>
       <div className="container">
         <div className="row">
 
