@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Logo from '../images/logo.png'
 
 import { ESHIKOYNA_LANGUAGE } from '../tools/constants'
@@ -24,8 +24,22 @@ export default function Navbar() {
     document.location.reload(true)
   }
 
+  const[navbar, setNavbar] = useState(false)
+
+  const changeNavbar = () => {
+    if (window.scrollY >= 1) {
+        setNavbar(true);
+    } else {
+        setNavbar(false)
+    }
+  }
+  window.addEventListener('scroll', changeNavbar);
+
+  useEffect(() => {
+  }, [])
+
   return (
-    <div className='Navbar'>
+    <div className={`Navbar ${navbar ? 'navbarActive' : ''}`}>
       <div className="container">
         <div className="nav-body">
           <img src={Logo} alt="logo" />
