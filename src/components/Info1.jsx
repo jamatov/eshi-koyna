@@ -1,28 +1,27 @@
 import React from 'react'
 import img from '../images/info1.jpeg'
 
+import { getText } from '../locale'
+
+
 export default function Info1() {
   return (
     <div className='Info1'>
       <div className="container">
-        <div className="row">
+        <div className="row row-r">
+          <div data-aos="fade-left" data-aos-duration="1500" className="col-md-6 mb-3">
+            <img src={img} alt="" />
+          </div>
 
-          <div className="col-md-6 info1-texts text-center">
+          <div data-aos="fade-right" data-aos-duration="1500" className="col-md-6 info1-texts text-center">
             <div>
               <p>
-                Bizning korxonada turli hil o’lchamdagi eshik <br />
-                va oynalar ishlab chiqariladi. Undan <br />
-                tashqari, hozirgi zamonaviy ofislar uchun <br />
-                xonalarda devor o’rniga qalin shishalar <br />
-                yasash va o’rnatish xizmatlari ham mavjud. <br />
+                {getText("info1Texts")}
               </p>
-              <button className="button">Bog'lanish <i class="fa-solid fa-arrow-right-long"></i> </button>
+              <button className="button">{getText("button")} <i class="fa-solid fa-arrow-right-long"></i> </button>
             </div>
           </div>
 
-          <div className="col-md-6">
-            <img src={img} alt="" />
-          </div>
 
         </div>
       </div>

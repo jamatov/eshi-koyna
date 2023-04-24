@@ -1,5 +1,8 @@
 import React from 'react'
 
+import { getText } from '../locale'
+
+
 export default function Header() {
   return (
     <div className='Header' id='Header'>
@@ -7,7 +10,7 @@ export default function Header() {
         <div className="header-body">
           <div className="text-center">
             <div className='button'>
-              <span>Bog'lanish</span><i class="fa-solid fa-arrow-right-long"></i>
+              <span>{getText('button')}</span><i class="fa-solid fa-arrow-right-long"></i>
             </div>
           </div>
         </div>

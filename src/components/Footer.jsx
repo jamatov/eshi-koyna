@@ -1,5 +1,7 @@
 import React from 'react'
 import Logo from '../images/logo.png'
+import { getText } from '../locale'
+
 
 export default function Footer() {
   return (
@@ -10,7 +12,7 @@ export default function Footer() {
             <img src={Logo} alt="" />
           </div>
           <div className="col-md-4 footer-blog text-center">
-            <a className='number-link' href='#'>Toshkent shahar, Mirzo Ulug’bek tumani, Alisherobod MFY, Nurli zamin ko’chasi, 83 – А</a>
+            <a className='number-link' href='#'>{getText("social3link")}</a>
           </div>
 
           <div className="col-md-4 footer-blog text-center">

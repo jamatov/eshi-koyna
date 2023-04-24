@@ -1,4 +1,5 @@
 import './App.scss';
+import './Responsive.scss'
 import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';

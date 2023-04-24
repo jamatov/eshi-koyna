@@ -5,12 +5,17 @@
 
 $text-color : #062A4D;
 $bg-color : #F2F0F0;
+$lang-bg : #DCE2EB;
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+}
+
+.App{
+  overflow-x: hidden !important;
 }
 
 li{
@@ -30,6 +35,11 @@ ul{
   padding: 0 !important;
 }
 
+.row-r{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .button{
   cursor: pointer;
   display: inline-flex;
@@ -44,16 +54,30 @@ ul{
 }
 
 .Navbar{
+  width: 100%;
+  position: fixed;
+  background: $bg-color;
+  z-index: 9;
   .nav-body{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    .nav__toggler{
+      display: none;
+      div{
+        width: 2.5rem;
+        height: 0.2rem;
+        margin: 0.4rem;
+        background: $text-color;
+      }
+    }
+
     img{
       height: 54px;
     }
 
-    ul{
+    .nav-list{
       display: flex;
 
       li{
@@ -66,6 +90,57 @@ ul{
           text-transform: uppercase;
 
         }
+
+        .tel{
+          padding: 10px 15px;
+          border-radius: 30px;
+          background: #fff;
+          transition: 0.3s ease-in-out;
+
+
+          &:hover{
+            transition: 0.3s ease-in-out;
+            box-shadow: 0px 0px 16px 1px #888;
+          }
+        }
+      }
+
+      .langWrap{
+        position: relative;
+        transition: 0.3s ease-in;
+        display: flex;
+        align-items: center;
+
+        h5{
+          cursor: pointer;
+          margin: 0;
+          color: $text-color;
+          font-size: 17px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        .wrap{
+          position: absolute;
+          top: 60px;
+          display: none;
+          background: $lang-bg;
+          padding: 10px;
+          // right: 0;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+          transition: 0.3s ease-in-out;
+          p{
+            margin: 0;
+            cursor: pointer;
+          }
+        }
+
+        &:hover{
+          .wrap{
+            display: block;
+          }
+        }
       }
 
       
@@ -75,6 +150,7 @@ ul{
 }
 
 .Header{
+  padding-top: 78px;
   background-color: $bg-color;
   .header-body{
     padding-top: 450px;
@@ -140,6 +216,11 @@ ul{
   padding: 20px 0 30px;
   background: $bg-color;
 
+  .row{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   h2{
     margin-bottom: 20px;
     font-size: 28px;
@@ -199,6 +280,7 @@ ul{
     justify-content: center;
 
     p{
+      padding: 0 30px;
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 50px;
@@ -208,6 +290,12 @@ ul{
   img{
     width: 100%;
     border-radius: 30px;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+      transition: 0.2s ease-in-out;
+      transform: scale(1.05);
+    }
   }
 }
 

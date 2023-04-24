@@ -1,0 +1,131 @@
+$text-color : #062A4D;
+$bg-color : #F2F0F0;
+$lang-bg : #DCE2EB;
+
+@media (max-width : 768px) {
+  .About{
+    .about-img{
+      margin-bottom: 30px;
+    }
+
+    .about-info{
+      text-align: center;
+    }
+  }
+
+  .Info1{
+    img{
+      width: 100%;
+      border-radius: 30px;
+      transition: 0.2s ease-in-out;
+  
+      &:hover{
+        transition: 0.2s ease-in-out;
+        transform: scale(1.01);
+      }
+    }
+  }
+}
+
+@media (max-width : 992px) {
+  .Navbar{
+
+    .nav-body{
+      padding: 25px 0;
+      .nav-list{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: $text-color;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 30px;
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+
+      }
+
+      .nav-active{
+        transition: 0.3s ease-in-out;
+        transform: translateX(0);
+        li{
+          text-align: center;
+          color: #fff !important;
+
+          a{
+            color: #fff !important;
+          }
+
+          .tel{
+            padding: 10px 15px;
+            border-radius: 30px;
+            background: $text-color;
+            transition: 0.3s ease-in-out;
+            border: 2px solid #fff;
+  
+            &:hover{
+              transition: 0.3s ease-in-out;
+              box-shadow: 0px 0px 16px 1px #888;
+            }
+          }
+        }
+        .langWrap{
+          display: inline-block;
+          margin: 0 auto;
+          h5{
+
+            text-align: center;
+          }
+
+
+        }
+
+      }
+
+
+
+
+      .nav__toggler{
+        display: block;
+        z-index: 9;
+        transition: 0.7s ease-in-out;
+
+      }
+
+      .toggle{
+        transition: 0.3s ease-in-out;
+        
+        .line1{
+          background: #fff;
+          transform: rotate(-45deg) translate(-9px, 5px);
+          
+
+        }
+        .line2{
+          opacity: 0;
+        }
+        .line3{
+          background: #fff;
+          transform: rotate(45deg) translate(-8px, -5px);
+
+
+        }
+      }
+    }
+  }
+
+  .OurProducts{
+    .product-card{
+     
+  
+      .card-footer{
+        h2{
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
